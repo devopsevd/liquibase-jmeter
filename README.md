@@ -2,8 +2,11 @@
 Dockerized instance of Jmeter, Elastic, Logstash, and Kibana for load/performance testing web applications
 
 It's based on a couple of blog post and another repo:
+
 [JELK](http://ecmarchitect.com/archives/2014/09/09/3932) 
-[Visualizing Datasets with ELK] (http://blog.webkid.io/visualize-datasets-with-elk/)
+
+[Visualizing Datasets with ELK](http://blog.webkid.io/visualize-datasets-with-elk/)
+
 [ELK-demo](https://github.com/joppa27/ELK-demo)
 
 
