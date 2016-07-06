@@ -31,4 +31,9 @@ macker `localhost:5601`
 or
 docker-machine `http://192.168.99.100:5601`
 
+## Gotchas
+ - On the initial visit to Kibana choose the timeStamp field in the dropdown when creating an index pattern
+ - When visiting the Discover tab, be sure the duration (shown in the top right corner of the page) reflects the correct date/time range of the data.
+
+
 enjoy!
