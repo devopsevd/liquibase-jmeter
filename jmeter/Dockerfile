@@ -36,8 +36,7 @@ EXPOSE $RMI_PORT
 RUN touch $JMETER_HOME/$JMETER_LOG
 
 COPY /config/ $JMETER_HOME/config
-COPY /v1_api/ $JMETER_HOME/v1_api
-COPY /v2_api/ $JMETER_HOME/v2_api
+COPY /test_plans/ $JMETER_HOME/test_plans
 COPY docker-entrypoint.sh /
 
 
