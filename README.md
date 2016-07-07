@@ -1,39 +1,21 @@
-# jelk stack
-Dockerized instance of Jmeter, Elastic, Logstash, and Kibana for load/performance testing web applications
-
-It's based on a couple of blog post and another repo:
-
-[JELK](http://ecmarchitect.com/archives/2014/09/09/3932) 
-
-[Visualizing Datasets with ELK](http://blog.webkid.io/visualize-datasets-with-elk/)
-
-[ELK-demo](https://github.com/joppa27/ELK-demo)
+# Introduction 
+This repo contains a dockerize stack containing **J**meter, **E**lastic, **L**ogstash, and **K**ibana **JELK** for performance testing the Open Data API; Loading the results into Elastic for analysis in Kibana.
 
 
-## PRE-REQS
-**docker for mac beta**
-[macker install](https://docs.docker.com/docker-for-mac/)
+# Instructions/Requirements/Disclaimer
+**This has only be run/tested on OSX**
+- clone repo
+- Install docker for mac beta, [macker install](https://docs.docker.com/docker-for-mac/)
+- In repo directory run `docker-compose up`;  Wait for build to complete
+- Visit `localhost:5601` (Kibana)
+- Select timeStamp field in the dropdown when creating an index pattern
 
-OR
-
-**docker & docker-compose**
-If you're running Windows/OSX install [docker toolbox](https://www.docker.com/docker-toolbox)
-  
-## Standup stack
-
-open the terminal, navigate to the project root directory & type
-
-`docker-compose up`
-
-Once all the containers have started you can find kibana at localhost or docker-machine ip depending on your docker install:
-
-macker `localhost:5601`
-or
-docker-machine `http://192.168.99.100:5601`
+## Thanks
+There were a few sources that inspired and were used to build out this project.
+- [Jmeter integration with ELK](http://ecmarchitect.com/archives/2014/09/09/3932) 
+- [Visualizing Datasets with ELK](http://blog.webkid.io/visualize-datasets-with-elk/)
+- [ELK-demo](https://github.com/joppa27/ELK-demo)
 
 ## Gotchas
- - On the initial visit to Kibana choose the timeStamp field in the dropdown when creating an index pattern
  - When visiting the Discover tab, be sure the duration (shown in the top right corner of the page) reflects the correct date/time range of the data.
 
-
-enjoy!
