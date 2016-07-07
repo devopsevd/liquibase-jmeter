@@ -8,7 +8,7 @@ This repo contains a dockerize stack for **J**meter, **E**lastic, **L**ogstash, 
 - Install docker for mac beta, [macker install](https://docs.docker.com/docker-for-mac/)
 - In repo directory run `docker-compose up`;  Wait for build to complete and tests to run
 - Visit `localhost:5601` (Kibana)
-- Select the timeStamp field in the dropdown when creating an index pattern
+- Under the Settings tab create a index pattern by selecting the timeStamp field in the dropdown.
 
 ## Thanks
 There were a few sources that inspired and were referenced to build out this project.
