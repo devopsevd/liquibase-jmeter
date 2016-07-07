@@ -11,7 +11,7 @@ This repo contains a dockerize stack for **J**meter, **E**lastic, **L**ogstash, 
 - Select the timeStamp field in the dropdown when creating an index pattern
 
 ## Thanks
-There were a few sources that inspired and were referrenced to build out this project.
+There were a few sources that inspired and were referenced to build out this project.
 - [Jmeter integration with ELK](http://ecmarchitect.com/archives/2014/09/09/3932) 
 - [Visualizing Datasets with ELK](http://blog.webkid.io/visualize-datasets-with-elk/)
 - [ELK-demo](https://github.com/joppa27/ELK-demo)
