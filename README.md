@@ -5,14 +5,13 @@ There is a "ready to use" jmeter test plan that will run when the containers are
 
 # Instructions
 **This has only be run/tested on OSX**
-- clone repo
+- Clone repo
 - Install docker for mac. [install](https://docs.docker.com/docker-for-mac/)
-- In repo directory run `docker-compose up`;  Wait for build to complete, example test will run.
+- In repo directory run `docker-compose up`;  Wait for build to complete.
 - Visit `localhost:5601` (Kibana)
 - Under the Settings tab create a index pattern by selecting the timeStamp field in the dropdown.
 - Select 'Discover' tab,  two requests should be visable.
-
-Run example tests again `./test_runner.sh`
+- Run example tests.  `$ ./test_runner.sh`
 
 ## Thanks
 There were a few sources that inspired and were referenced to build out this project.
