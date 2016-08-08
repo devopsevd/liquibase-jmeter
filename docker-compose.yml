@@ -7,7 +7,6 @@ services:
       - "1099:1099"
     volumes:
       - data:/data/
-    entrypoint: /docker-entrypoint.sh
 
   elasticsearch:
     image: elasticsearch:latest
