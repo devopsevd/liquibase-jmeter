@@ -6,9 +6,11 @@ This repo contains a dockerize stack for **J**meter, **E**lastic, **L**ogstash, 
 **This has only be run/tested on OSX**
 - clone repo
 - Install docker for mac, [install](https://docs.docker.com/docker-for-mac/)
-- In repo directory run `docker-compose up`;  Wait for build to complete and tests to run
+- In repo directory run `docker-compose up`;  Wait for build to complete 
+- Run example tests `./test_runner.sh`
 - Visit `localhost:5601` (Kibana)
 - Under the Settings tab create a index pattern by selecting the timeStamp field in the dropdown.
+- Select 'Discover' tab,  two requests should be visable.
 
 ## Thanks
 There were a few sources that inspired and were referenced to build out this project.
