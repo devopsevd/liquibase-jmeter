@@ -1,11 +1,12 @@
 # Introduction 
-This repo contains a dockerize stack for **J**meter, **E**lastic, **L**ogstash, and **K**ibana (**JELK**) for performance testing the Open Data API; Loading the results into Elastic for analysis in Kibana.
+This repo contains a dockerize stack for **J**meter, **E**lastic, **L**ogstash, and **K**ibana (**JELK**) for performance/stress/load testing of pages and/or APIs; Loading the results into Elastic for analysis in Kibana. 
 
+There is a ready to use jmeter test plan in the repo. It consumes a CSV of target URLs and URIs. The test can can be run from your command line into the docker container. These examples can easily be modified to run against an environment of your choice for performance evaluation.
 
-# Instructions/Requirements/Disclaimer
+# Instructions
 **This has only be run/tested on OSX**
 - clone repo
-- Install docker for mac, [install](https://docs.docker.com/docker-for-mac/)
+- Install docker for mac. [install](https://docs.docker.com/docker-for-mac/)
 - In repo directory run `docker-compose up`;  Wait for build to complete 
 - Run example tests `./test_runner.sh`
 - Visit `localhost:5601` (Kibana)
