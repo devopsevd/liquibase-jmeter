@@ -1,5 +1,5 @@
 # Introduction 
-This repo contains a dockerize stack for **J**meter, **E**lastic, **L**ogstash, and **K**ibana (**JELK**) for performance/stress/load testing of pages and/or APIs; Loading the results into Elastic for analysis in Kibana. 
+This repo contains a dockerized stack for **J**meter, **E**lastic, **L**ogstash, and **K**ibana (**JELK**) for performance/stress/load testing of pages and/or APIs; Loading the results into Elastic for analysis in Kibana. 
 
 There is a "ready to use" jmeter test plan that will run when the containers are up. The test consumes a CSV of target URLs and URIs. The test can can be run from your command line into the docker container as well. These examples can easily be modified to run against an environment of your choice for performance evaluation.
 
