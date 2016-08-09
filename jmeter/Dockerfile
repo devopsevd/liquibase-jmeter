@@ -37,7 +37,7 @@ RUN touch $JMETER_HOME/$JMETER_LOG
 
 COPY /config/ $JMETER_HOME/config
 COPY /test_plans/ $JMETER_HOME/test_plans
-COPY docker-entrypoint.sh /
+
 
 
 
