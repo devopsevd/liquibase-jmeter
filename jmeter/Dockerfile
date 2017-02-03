@@ -9,8 +9,7 @@ ENV IP 127.0.0.1
 ENV RMI_PORT 1099
 
 RUN apt-get -y update && \
-	apt-get -y install wget && \
-	apt-get -y install vim 
+	apt-get -y install wget vim lsof
 
 RUN wget http://www.eu.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz && \
 	tar -xzf apache-jmeter-${JMETER_VERSION}.tgz -C /usr/local/
