@@ -1,5 +1,5 @@
 {
-  "template": "warm-cache-dev-%{+YYYY.MM.dd.SSS}",
+  "template": "test-results-%{+YYYY.MM.dd}",
   "settings": {
       "number_of_shards": 1,
       "number_of_replicas": 0,
@@ -9,18 +9,15 @@
     "logs": {
       "properties": {
         "elapsed": {
-          "type": "long",
-          "index": "not_analyzed"
+          "type": "long"
         },
         "responseCode": {
-          "type": "integer",
-          "index": "not_analyzed"
+          "type": "integer"
         },
-        "latency": {
-          "type": "long",
-          "index": "not_analyzed"
+        "Latency": {
+          "type": "long"
         },
-        "url": {
+        "URL": {
           "type": "string"
         }
       }

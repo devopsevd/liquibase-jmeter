@@ -7,6 +7,7 @@ services:
       - "1099:1099"
     volumes:
       - data:/data/
+    tty: true
 
   elasticsearch:
     image: elasticsearch:latest
@@ -16,7 +17,7 @@ services:
   logstash:
     image: logstash:latest
     links: 
-      - elasticsearch
+      #- elasticsearch
       - jmeter
     volumes:
       - ./logstash:/config-dir/
