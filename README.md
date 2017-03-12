@@ -7,11 +7,23 @@ There is a "ready to use" jmeter test plan that will run when the containers are
 **This has only be run/tested on OSX**
 - Clone repo
 - Install docker for mac. [install](https://docs.docker.com/docker-for-mac/)
+
+### Run full JELK stack
 - In repo directory run `docker-compose up`;  Wait for build to complete.
 - Run example tests.  `$ ./test_runner.sh`
 - Visit `localhost:5601` (Kibana)
 - Under the Settings tab create a index pattern by selecting the timeStamp field in the dropdown.
 - Select 'Discover' tab,  two requests should be visable.
+- When visiting the Discover tab, be sure the duration (shown in the top right corner of the page) reflects the correct date/time range of the data.
+
+### Just run jmeter
+- In repo directory run `docker-compose up jmeter`;  Wait for build to complete.
+- Run example tests.  `$ ./test_runner.sh`
+- Results are in the jmeter container at /data
+- docker-compose exec jmeter bash
+- cd /data
+- vi test_results.csv
+
 
 ## Thanks
 There were a few sources that inspired and were referenced to build out this project.
@@ -19,6 +31,5 @@ There were a few sources that inspired and were referenced to build out this pro
 - [Visualizing Datasets with ELK](http://blog.webkid.io/visualize-datasets-with-elk/)
 - [ELK-demo](https://github.com/joppa27/ELK-demo)
 
-## Gotchas
- - When visiting the Discover tab, be sure the duration (shown in the top right corner of the page) reflects the correct date/time range of the data.
+
 
