@@ -7,6 +7,7 @@ There is a "ready to use" jmeter test plan that will run when the containers are
 **This has only be run/tested on OSX**
 - Clone repo
 - Install docker for mac. [install](https://docs.docker.com/docker-for-mac/)
+- To add you own urls, edit the example_urls.csv in the jmeter config directory. The examples run against google and yahoo.
 
 ### Run full JELK stack
 - In repo directory run `docker-compose up`;  Wait for build to complete.
@@ -23,6 +24,7 @@ There is a "ready to use" jmeter test plan that will run when the containers are
 - docker-compose exec jmeter bash
 - cd /data
 - vi test_results.csv
+
 
 
 ## Thanks
