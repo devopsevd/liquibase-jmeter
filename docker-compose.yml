@@ -10,28 +10,31 @@ services:
     tty: true
 
   elasticsearch:
-    image: elasticsearch:latest
+    image: elasticsearch:2.4.4
     ports: 
       - "9200:9200"
+    tty: true
 
   logstash:
-    image: logstash:latest
-    links: 
-      #- elasticsearch
+    image: logstash:2.3
+    links:
+      - elasticsearch
       - jmeter
     volumes:
       - ./logstash:/config-dir/
-      - data:/data/
+      - data:/data
     ports:
       - "5000:5000"
     command: logstash -f /config-dir/logstash.conf
+    tty: true
 
   kibana:
-    image: kibana:latest
+    image: kibana:4.6
     ports:
       - "5601:5601"
     links: 
       - elasticsearch
+    tty: true
 
 volumes:
   data: {}
