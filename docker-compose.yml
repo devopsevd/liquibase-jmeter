@@ -2,7 +2,7 @@ version: '2'
 
 services:
   jmeter:
-    image: devopsevd/oss-jmeter-master
+    image: ./jmeter/
     ports:
       - "1099:1099"
     volumes:
