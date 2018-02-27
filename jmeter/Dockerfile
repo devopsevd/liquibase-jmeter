@@ -1,5 +1,5 @@
 FROM ubuntu:15.04
-FROM java:7
+FROM java:8
 
 ENV JMETER_VERSION 3.3
 ENV JMETER_HOME /usr/local/apache-jmeter-${JMETER_VERSION}
