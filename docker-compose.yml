@@ -8,12 +8,16 @@ services:
     volumes:
       - data:/data/
     tty: true
+    networks:
+      - prodnetwork
 
   elasticsearch:
     image: elasticsearch:2.4.4
     ports: 
       - "9200:9200"
     tty: true
+    networks:
+      - prodnetwork
 
   logstash:
     image: logstash:2.3
@@ -27,7 +31,8 @@ services:
       - "5000:5000"
     command: logstash -f /config-dir/logstash.conf
     tty: true
-
+    networks:
+      - prodnetwork
   kibana:
     image: kibana:4.6
     ports:
@@ -35,11 +40,12 @@ services:
     links: 
       - elasticsearch
     tty: true
+    networks:
+      - prodnetwork
 
 volumes:
   data: {}
   
 networks:
-  default:
-    external:
-      name: bundlev2_prodnetwork
+  prodnetwork:
+    driver: bridge
