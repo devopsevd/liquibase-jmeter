@@ -38,3 +38,8 @@ services:
 
 volumes:
   data: {}
+  
+networks:
+  default:
+    external:
+      name: bundlev2_prodnetwork
