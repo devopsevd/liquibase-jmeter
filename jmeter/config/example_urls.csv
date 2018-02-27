@@ -1,4 +1,2 @@
 loop,host,path
-1,yahoo.com,/
-1,google.com,/
 1,cmt-devops-app-lb-785185585.us-east-1.elb.amazonaws.com,/
