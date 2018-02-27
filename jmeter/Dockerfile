@@ -1,7 +1,7 @@
 FROM ubuntu:15.04
 FROM java:7
 
-ENV JMETER_VERSION 3.1
+ENV JMETER_VERSION 3.3
 ENV JMETER_HOME /usr/local/apache-jmeter-${JMETER_VERSION}
 ENV PATH ${JMETER_HOME}/bin:${PATH}
 ENV JMETER_LOG jmeter.log
@@ -11,7 +11,7 @@ ENV RMI_PORT 1099
 RUN apt-get -y update && \
 	apt-get -y install wget vim lsof
 
-RUN wget http://www.eu.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz && \
+RUN wget http://archive.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz && \
 	tar -xzf apache-jmeter-${JMETER_VERSION}.tgz -C /usr/local/
 
 RUN rm -rf apache-jmeter-${JMETER_VERSION}.tgz \
