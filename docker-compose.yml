@@ -7,7 +7,7 @@ services:
       - "1099:1099"
     volumes:
       - data:/data/
-    tty: true
+    tty: false
     networks:
       - prodnetwork
 
