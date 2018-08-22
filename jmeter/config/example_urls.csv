@@ -1,2 +1,2 @@
 loop,host,path
-1,cmt-devops-app-lb-785185585.us-east-1.elb.amazonaws.com,/
+1,10.144.2.19:81/SpringIODemo/demoPage,/
