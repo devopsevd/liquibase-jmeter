@@ -10,6 +10,7 @@ services:
     tty: false
     networks:
       - prodnetwork
+    container_name: liquibase_jmeter
 
 volumes:
   data: {}
