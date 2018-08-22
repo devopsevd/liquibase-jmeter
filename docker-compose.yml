@@ -11,38 +11,6 @@ services:
     networks:
       - prodnetwork
 
-  elasticsearch:
-    image: elasticsearch:2.4.4
-    ports: 
-      - "9200:9200"
-    tty: true
-    networks:
-      - prodnetwork
-
-  logstash:
-    image: logstash:2.3
-    links:
-      - elasticsearch
-      - jmeter
-    volumes:
-      - ./logstash:/config-dir/
-      - data:/data
-    ports:
-      - "5000:5000"
-    command: logstash -f /config-dir/logstash.conf
-    tty: true
-    networks:
-      - prodnetwork
-  kibana:
-    image: kibana:4.6
-    ports:
-      - "5601:5601"
-    links: 
-      - elasticsearch
-    tty: true
-    networks:
-      - prodnetwork
-
 volumes:
   data: {}
   
