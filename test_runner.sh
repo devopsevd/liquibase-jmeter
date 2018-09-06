@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-//docker exec -it liquibase_jmeter bash -c 'cd /data/; >test_results.csv'
-//docker exec -it liquibase_jmeter bash -c \
+#docker exec -it liquibase_jmeter bash -c 'cd /data/; >test_results.csv'
+#docker exec -it liquibase_jmeter bash -c \
 
 docker exec -i liquibase_jmeter bash -c 'cd /data/; >test_results.csv'
 docker exec -i liquibase_jmeter bash -c \
